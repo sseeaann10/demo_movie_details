@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import MoviesList from './components/MoviesList';
+
 
 function App() {
+  const moviesArray = ["Fast and Furious", "Harry Potter", "Lord of the Rings"];
   return (
     <div className="App">
+      <MoviesList movies = {moviesArray} />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
